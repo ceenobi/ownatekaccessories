@@ -46,6 +46,7 @@ export default function Cart() {
   }
   const innerBoxStyle = {
     h: '100vh',
+    overflow: 'auto',
     w: { base: 'full', lg: '480px' },
     float: 'right',
     position: 'relative',
@@ -247,7 +248,7 @@ export default function Cart() {
         </Box>
         <Divider borderBottom='2px solid #dcdcdc' />
         {bagItems.length >= 1 && (
-          <Box w='100%' p='10px'>
+          <Box w='100%' py='10px'>
             <Flex justify='space-between' mb={4}>
               <Heading as='h6' fontSize='lg'>
                 Subtotal:

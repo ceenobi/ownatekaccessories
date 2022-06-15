@@ -223,9 +223,9 @@ export default function ProductDetails({ productId, products }) {
               <Box
                 textAlign={{ base: 'center', lg: 'left' }}
                 w={{ base: '100%', lg: '500px' }}
-                mb={6}
+                mb='2rem'
               >
-                <Heading as='h2' size='xl' fontWeight='bold' mb={6}>
+                <Heading as='h2' size='xl' fontWeight='bold' mb={15}>
                   {smallText}
                 </Heading>
                 <Text textStyle='p'>{midText}</Text>
