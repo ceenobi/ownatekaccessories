@@ -13,17 +13,16 @@ import {
   Button,
 } from '@chakra-ui/react'
 
-import { useStateContext } from '../context/StateContext'
+import { useCart } from '../contextHook/useCart'
 import { runFireworks } from '../lib/utils'
 
 export default function success() {
-  const { setBagItems, setTotalQty, setTotalPrice } = useStateContext()
+  const { setBagItems, priceSum } = useCart()
 
   useEffect(() => {
     localStorage.clear()
     setBagItems([])
-    setTotalPrice(0)
-    setTotalQty(0)
+    priceSum(0)
     runFireworks()
   }, [])
 
