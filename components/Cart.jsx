@@ -45,7 +45,7 @@ export default function Cart() {
     background: 'rgba(0, 0, 0, 0.25)',
   }
   const innerBoxStyle = {
-    h: '1000px',
+    h: '100vh',
     w: { base: 'full', lg: '480px' },
     float: 'right',
     position: 'relative',
