@@ -17,12 +17,11 @@ import { useCart } from '../contextHook/useCart'
 import { runFireworks } from '../lib/utils'
 
 export default function success() {
-  const { setBagItems, priceSum } = useCart()
+  const { setBagItems } = useCart()
 
   useEffect(() => {
     localStorage.clear()
     setBagItems([])
-    priceSum(0)
     runFireworks()
   }, [])
 
