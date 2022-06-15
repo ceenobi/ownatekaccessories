@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react'
+import React, { useRef } from 'react'
 import Link from 'next/link'
 import { RiShoppingCartLine } from 'react-icons/ri'
 import {
@@ -22,7 +22,7 @@ import {
   Heading,
   useColorModeValue,
 } from '@chakra-ui/react'
-import { useRouter } from 'next/router'
+//import { useRouter } from 'next/router'
 
 import { useCart } from '../contextHook/useCart'
 import getStripe from '../lib/getStripe'
@@ -45,7 +45,7 @@ export default function Cart() {
     background: 'rgba(0, 0, 0, 0.25)',
   }
   const innerBoxStyle = {
-    h: '100vh',
+    h: '1000px',
     w: { base: 'full', lg: '480px' },
     float: 'right',
     position: 'relative',
@@ -122,7 +122,6 @@ export default function Cart() {
   // const onError = (data, actions) => {
   //   toast.error('Something went wrong with your payment')
   // }
-
 
   return (
     <Box sx={boxStyle} ref={bagRef}>
@@ -248,7 +247,7 @@ export default function Cart() {
         </Box>
         <Divider borderBottom='2px solid #dcdcdc' />
         {bagItems.length >= 1 && (
-          <Box position='absolute' bottom='12px' right='5px' w='100%' p='20px'>
+          <Box w='100%' p='10px'>
             <Flex justify='space-between' mb={4}>
               <Heading as='h6' fontSize='lg'>
                 Subtotal:

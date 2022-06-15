@@ -45,7 +45,7 @@ export default function NewArrivals({ newArrival }) {
                   direction='column'
                   justify='center'
                   align='center'
-                  minW='310px'
+                  minW='300px'
                   position='relative'
                   h='480px'
                   bg='pallete.lightGrey'
@@ -53,7 +53,7 @@ export default function NewArrivals({ newArrival }) {
                 >
                   <Image
                     src={product.image[0].urlField}
-                    boxSize='280px'
+                    boxSize='270px'
                     objectFit='contain'
                     alt='products'
                     className='img-scale'
